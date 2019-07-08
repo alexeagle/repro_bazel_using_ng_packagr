@@ -49,6 +49,9 @@ ng_module(
 rollup_bundle(
     name = "bundle",
     entry_point = ":main.prod.ts",
+    additional_entry_points = [
+        "//src/app/page-one/page-one.module.ngfactory",
+    ],
     deps = [
         "//src",
         "@npm//@angular/router",
