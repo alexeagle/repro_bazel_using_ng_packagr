@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'repro-trademe1';
+  model = {
+    left: true,
+    middle: false,
+    right: false
+  };
 }
